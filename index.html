@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Agency Kucra</title>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,10 +33,10 @@
 -->
 
     <header>
-        <!-- Tentative de tous mettre dans la nav pour regrouper ensemble et travailler différament du block de contenu -->
-        <nav>
-            <!-- Logo en titre (ajouter une classe logo ?)-->
+        <div class="header">
             <h1>Kucra</h1>
+            <nav>
+            <!-- Logo en titre (ajouter une classe logo ?)-->
             <!-- la liste des liens du menu -->
             <ul>
                 <li> <a href="#"> Home</a></li>
@@ -47,7 +48,8 @@
                 <li> <a href="#"> Blog</a></li>
                 <li> <a href="#"> Contact</a></li>
             </ul>
-            <!-- la div contenant les îcones des réseaux sociaux -->
+            <!-- la div contenant les îcones des réseaux sociaux en utilisant la balise a pour les rendres clickable-->
+            </nav>
             <div class="social">
                 <a href="https://www.facebook.com/?locale=fr_FR">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"/></svg>
@@ -59,10 +61,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
                 </a>
             </div>
-        </nav>
+        </div>
         <!--Création de section pour regrouper. utilisation de div par la suite pour mettre les enfant en flex-->
         <section>
-            <div class="weare">
+            <article class="weare">
                 <h2>We are StartUp Creative Kucra Agency</h2>
                 <p>Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</p>
                 <!--Création d'un form pour l'espace de texte email et ajout du bouton à l'intérieur-->
@@ -70,10 +72,10 @@
                     <!--Ajout du label car conseillé par W3school dans le cas d'utilisation du input text-->
                     <label for="email"></label>
                     <!--Ajout du placeholder dans la valise input pour avoir le texte à l'intérieur de champ email-->
-                    <input type="email" placeholder="Enter your email">
-                    <input type="button" placeholder="SUBSCRIBE">
+                    <input type="email" id="email" placeholder="Enter your e-mail">
+                    <input type="button" value="SUBSCRIBE">
                 </form>
-            </div>
+            </article>
             <figure>
                 <img src="illustration.svg" alt="a cat on a screen where the tabs seem to come out of the screen">
             </figure>
@@ -82,7 +84,7 @@
     </header>
 
     <main>
-
+<!--------------------------------------------------------------------------- Section features --------------------------------------------------------------------->
         <section class="features">
             <h2>Products Features</h2>
             <p> It is a long established fact that a reader will be of a page when establishes fact looking at it's layout.</p>
@@ -111,7 +113,7 @@
                 </div>
             </div>
         </section>
-
+<!--------------------------------------------------------------------------- Section Team --------------------------------------------------------------------->
         <section class="team">
             <h2>We'r dynamic team of talented people of innovative & marketing expert</h2>
             <p> To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.</p>
@@ -205,99 +207,101 @@
                 </figure>
             </div>
         </section>
-
+<!--------------------------------------------------------------------------- Section Parallax --------------------------------------------------------------------->
         <section class="calltoaction">
             <!--Div pour créer l'effet de scrolling parallax du fond d'écran, à travailler en css-->
             <div class="parallax"></div>
             <h2>Let's get started with Kucra</h2>
             <p>They are a good way to get you started if you want to build somehting similar or use from existing apps which will reduce the cost, efforts and time of the deleopers.</p>
-            <button>Get Started</button>
+           
+            <a href="">Get Starte</a>
         </section>
-
+<!--------------------------------------------------------------------------- Section Blog --------------------------------------------------------------------->
         <section class="blog">
-            <figure class="blog_card">
-                <img src="img/blog1.png" alt="Women sitting on the bed with a book in one hand and watching something on her laptop">
-                <div class="info">
-                    <div class="name">
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-                        </p>
-                        <h2>FirstName LastName</h2>
+            <div class="blog_card">
+                <figure>
+                    <img src="img/blog1.png" alt="Women sitting on the bed with a book in one hand and watching something on her laptop">
+                    <div class="info">
+                        <div class="name">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
+                            </p>
+                            <h2>FirstName LastName</h2>
+                        </div>
+                        <div class="date">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>
+                            </p>
+                            <h2>Day Month Year</h2>
+                        </div>
                     </div>
-                    <div class="date">
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>
-                        </p>
-                        <h2>Day Month Year</h2>
-                    </div>
-                </div>
-                <figcaption>
+                </figure>
+                <article>
                     <h2>New exhibition at our museum</h2>
                     <p>Even the all-powerful Poiting has no control about the blind almost unorthographic.</p>
-                    <a href="www.google.fr">Read more</a>
-                </figcaption>
-            </figure>
-            <figure class="blog_card">
-                <img src="img/blog2.png" alt="Open-space office in a modern industriel style with some people working in it and a TV corner">
-                <div class="info">
-                    <div class="name">
-                        <p>
+                </article>
+                <a href="www.google.fr">Read more</a>
+            </div>
+            <div class="blog_card">
+                <figure>
+                    <img src="img/blog2.png" alt="Open-space office in a modern industriel style with some people working in it and a TV corner">
+                    <div class="info">
+                        <div class="name">
+                            <p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-                        </p>
-                        <h2>FirstName LastName</h2>
-                    </div>
-                    <div class="date">
-                        <p>
+                            </p>
+                            <h2>FirstName LastName</h2>
+                        </div>
+                        <div class="date">
+                            <p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>
-                        </p>
-                        <h2>Day Month Year</h2>
+                            </p>
+                            <h2>Day Month Year</h2>
+                        </div>
                     </div>
-                </div>
-                <figcaption>
+                </figure>
+                <article>
                     <h2>Design your apps in your own way</h2>
                     <p>Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                    <a href="www.google.fr">Read more</a>
-                </figcaption>
-            </figure>
-            <figure class="blog_card">
-                <img src="img/blog3.png" alt="Room with big table many chairs around, a couch in the corner and a bike with next to it a cabin where a women come out">
-                <div class="info">
-                    <div class="name">
-                        <p>
+                </article>
+                <a href="www.google.fr">Read more</a>
+            </div>
+            <div class="blog_card">
+                <figure>
+                    <img src="img/blog3.png" alt="Room with big table many chairs around, a couch in the corner and a bike with next to it a cabin where a women come out">
+                    <div class="info">
+                        <div class="name">
+                            <p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"/></svg>
-                        </p>
-                        <h2>FirstName LastName</h2>
-                    </div>
-                    <div class="date">
-                        <p>
+                            </p>
+                            <h2>FirstName LastName</h2>
+                        </div>
+                        <div class="date">
+                            <p>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"/></svg>
-                        </p>
-                        <h2>Day Month Year</h2>
+                            </p>
+                            <h2>Day Month Year</h2>
+                        </div>
                     </div>
-                </div>
-                <figcaption>
+                </figure>
+                <article>
                     <h2>Doing a cross country road trip</h2>
                     <p>We craft digital, graphic and dimensional thinking, to create category leading brand</p>
-                    <a href="www.google.fr">Read more</a>
-                </figcaption>
-            </figure>
+                </article>
+                <a href="www.google.fr">Read more</a>
+            </div>
         </section>
-
+<!--------------------------------------------------------------------------- Section Pricing --------------------------------------------------------------------->
         <section class="pricing">
             <div class="container_who">
-                <div class="text">
-                    <h2>We are digital creative Landing Page</h2>
-                    <p>the différence between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less pseudo-Latin naguage corresponds.</p>
-                    <!--Tentative d'utiliser balise figure pour mettre les chiffres et leurs infos en un block-->
-                    <figure>
-                        <h3>4957</h3>
-                        <figcaption>Happy User</figcaption>
-                    </figure>
-                    <figure>
-                        <h3>1599</h3>
-                        <figcaption>Complete Project</figcaption>
-                    </figure>
-                    <button>Learn More</button>
+                <div class="article">
+                    <article>
+                        <h2>We are digital creative Landing Page</h2>
+                        <p>the différence between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less pseudo-Latin naguage corresponds.</p>
+                    </article>
+                    <span>4957 Happy User</span>
+                    <span>>1599 Complete Project</span>
+                    <a href="www.google.fr">Learn More</a>
                 </div>
                 <div class="illustration">
                     <img src="img/creativity.png" alt="Creativy written in the middle underlined and a lot of little drawings around">
@@ -309,14 +313,14 @@
                 <div class="pricing_cards">
                     <div class="pricing_card">
                         <h3>Starter</h3>
-                        <p>$9/month</p>
+                        <span>$9/month</span>
                         <table>
                             <tr>
-                                <td>Brandwidth</td>
-                                <td>Onlinespace</td>
-                                <td>Support:No</td>
-                                <td>Domain</td>
-                                <td>Hidden Fees</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Brandwidth</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Onlinespace</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Support:No</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Domain</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Hidden Fees</td>
                             </tr>
                             <tr>
                                 <td>1GB</td>
@@ -326,20 +330,20 @@
                                 <td>No</td>
                             </tr>
                         </table>
-                        <button>Join Now</button>
+                        <a href="www.google.fr">Join Now</a>
                     </div>
                 </div>
                 <div class="pricing_cards">
                     <div class="pricing_card">
                         <h3>Advanced</h3>
-                        <p>$19/month</p>
+                        <span>$19/month</span>
                         <table>
                             <tr>
-                                <td>Brandwidth</td>
-                                <td>Onlinespace</td>
-                                <td>Support:No</td>
-                                <td>Domain</td>
-                                <td>Hidden Fees</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Brandwidth</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Onlinespace</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Support:No</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Domain</td>
+                                <td><i class="fa-regular fa-circle-check"></i>Hidden Fees</td>
                             </tr>
                             <tr>
                                 <td>2GB</td>
@@ -349,13 +353,13 @@
                                 <td>No</td>
                             </tr>
                         </table>
-                        <button>Join Now</button>
+                        <a href="www.google.fr">Join Now</a>
                     </div>
                 </div>
                 <div class="pricing_cards">
                     <div class="pricing_card">
                         <h3>Professionnal</h3>
-                        <p>$29/month</p>
+                        <span>$29/month</span>
                         <table>
                             <tr>
                                 <td>Brandwidth</td>
@@ -372,7 +376,7 @@
                                 <td>No</td>
                             </tr>
                         </table>
-                        <button>Join Now</button>
+                        <a href="www.google.fr">Join Now</a>
                     </div>
                 </div>
             </div>
@@ -395,7 +399,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M386.3 292.5C388.1 302.2 389.4 311.9 389.4 324.5C389.4 434.3 315.8 512 205 512C98.9 512 13 426.1 13 320C13 213.9 98.9 128 205 128C256.9 128 300.1 146.9 333.6 178.3L281.5 228.3C267.4 214.7 242.5 198.7 205 198.7C139.5 198.7 86.1 252.9 86.1 320C86.1 387.1 139.5 441.3 205 441.3C281 441.3 309.5 386.6 314 358.5L205 358.5L205 292.5L386.3 292.5L386.3 292.5zM571.7 298.9L571.7 243.2L515.7 243.2L515.7 298.9L460 298.9L460 354.9L515.7 354.9L515.7 410.6L571.7 410.6L571.7 354.9L627.4 354.9L627.4 298.9L571.7 298.9z"/></svg>
             </a>
         </div>
-        <p>Terms & Condition | Privacy policy | Contact Us</p>
+        <small>Terms & Condition | Privacy policy | Contact Us</small>
         <small>2022 Kucra - Landing Page Template by Pichforest</small>
     </footer>
 
