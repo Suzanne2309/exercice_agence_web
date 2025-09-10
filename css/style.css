@@ -10,18 +10,36 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+body a {}
+
 /************************************************************************* Header ***********************************************************************************/
 
+header {
+    background-color: #4b98bd;
+    padding: 2em;
+}
+
+/******                              NAVBAR                           ******/
 .navbar {
+    padding: 2em;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar .logo {
-    width: 30%;
+    width: 15%;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .navbar nav {
-    width: 40%;
+    width: 70%;
 }
 
 .navbar nav ul {
@@ -30,14 +48,247 @@ body {
 }
 
 .navbar nav li {
+    list-style: none;
+}
+
+.navbar nav li a {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
     text-decoration: none;
 }
 
-.nav_socials {
-    width: 30%;
+.nav_social {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_social a {
+    width: 2em;
+}
+
+/******                                ABOUT                                ******/
+
+.about {
+    padding: 5em;
     display: flex;
 }
 
-.nav_socials a {
-    width: 100%;
+.about article {
+    width: 50%;
+    padding: 6em;
+    margin: auto;
 }
+
+.about article h1 {
+    font-size: 5em;
+    line-height: 1.1em;
+}
+
+.about article p {
+    width: 68%;
+    padding: 1em 0.5em 1em 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about figure {
+    width: 50%;
+    margin: auto;
+}
+
+.about .form {}
+
+/************************************************************************* Main ***********************************************************************************/
+
+/******                                Section : Features                                ******/
+.features {
+    width: 100%;
+    padding: 1em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features h2 {
+    padding: 0.5em;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.features p {
+    width: 30%;
+    color: #646464;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.features_cards {
+    width: 150vh;
+    display: flex;
+}
+
+.feature_card {
+    background-color: #4b98bd;
+    width: 100%;
+    height: auto;
+    padding: 5em;
+    margin: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature_card .card_icone {
+    width: 4em;
+    color: #fff;
+}
+
+.feature_card h3 {
+    padding: 0.5em;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.feature_card p {
+    width: 100%;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/******                                Section : Team                                ******/
+
+.team {
+    width: 100%;
+    padding: 1em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team h2 {
+    width: 50%;
+    padding: 0.5em;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.team p {
+    width: 40%;
+    color: #646464;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.profils {
+    width: 100vh;
+    display: flex;
+}
+
+.profil {
+    width: 20%;
+    padding: 0.5em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil p {
+    width: auto;
+    font-size: 1em;
+}
+
+.profil figure img {
+    width: 100%;
+    border-radius: 80%;
+}
+
+.profil_socials {
+    width: 15%;
+}
+
+.profil figcaption h4 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/******                                Section : Parallax                                ******/
+
+.calltoaction {
+    /*Le padding permet ici d'aggrandir la surface de l'effet parallax*/
+    padding: 15em 0;
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.parallax {
+    /*Permet d'ajouter l'image souhaitait grâce à url, mais il faut indiquer  le chemin en local.*/
+    background-image: url(../img/parallax.png);
+    /*Sans définition de largeur, l'image ne s'affichait pas*/
+    min-width: 100%;
+    /*Permet de décider de la hauteur que prendra l'effet parallax. J'ai testé en mesure vh mais cela débordé forcément sur les autres section pour garder la taille demandé. Alors qu'en pourcentage cela s'adapte sur le height du parent (ici #cta)*/
+    height: 100%;
+    /*Création de l'effet parallax scrolling*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Maintenant il faut placer l'image et l'effet en-dessous du contenue textuel, pour cela on va utiliser la position absolue (on l'utilise sur l'effet car c'est une seule div à placer*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.calltoaction h2 {
+    padding: 0.5em;
+    font-size: 2em;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.calltoaction p {
+    width: 40%;
+    color: #333333;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 1;
+}
+
+.calltoaction .btn {
+    color: #000;
+    padding: 0.3em 0.8em;
+    text-decoration: none;
+    border: 0.15em solid #000;
+    border-radius: 8%;
+    z-index: 1;
+
+}
+
+/******                                Section : Blog                                ******/
+
+
+
+/******                                Section : Pricing                                ******/
+
+/************************************************************************* Footer ***********************************************************************************/
