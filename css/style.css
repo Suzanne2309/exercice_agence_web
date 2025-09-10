@@ -12,3 +12,32 @@ body {
 
 /************************************************************************* Header ***********************************************************************************/
 
+.navbar {
+    display: flex;
+}
+
+.navbar .logo {
+    width: 30%;
+}
+
+.navbar nav {
+    width: 40%;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar nav li {
+    text-decoration: none;
+}
+
+.nav_socials {
+    width: 30%;
+    display: flex;
+}
+
+.nav_socials a {
+    width: 100%;
+}
