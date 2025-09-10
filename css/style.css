@@ -287,8 +287,175 @@ header {
 
 /******                                Section : Blog                                ******/
 
+.blog {
+    width: 100%;
+    padding: 1em;
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.blog h2 {
+    width: 36%;
+    padding: 0.5em;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.container_blog {
+    width: 100%;
+    height: auto;
+    padding: 3em;
+    margin: 1.5em;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog_card {
+    width: 30%;
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog_card figure {}
+
+.blog_card figure img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.blog_card .info {}
+
+.blog_card .info .name {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.blog_card .info .date {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.blog_card .info_icone {
+    width: 2.5em;
+    color: #fff;
+}
+
+.blog_card .info h2 {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.blog_card article {}
+
+.blog_card article h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.blog_card article p {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.blog_card a {
+    padding: 0.5em 0;
+    /*Le link c'était centré vis-à-vis du parent (blog_card) au lieu de se coller à gauche comme l'article. Width à 100% a permis de l'aligner comme souhaité. text-align et justify-content n'ont rien changé lors des tests*/
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+}
 
 /******                                Section : Pricing                                ******/
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Partie article et image */
+.container_who {
+    width: 100%;
+    padding: 5em;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_who article {
+    width: 60%;
+}
+
+.container_who article h2 {
+    padding: 0.5em;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.container_who article p {
+    color: #646464;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.pricing_info {
+    display: flex;
+}
+
+.container_who span {}
+
+.container_who a {}
+
+.container_who .illustration {
+    width: 40%;
+}
+
+/* Partie tableau du pricing */
+.container_table {}
+
+.container_table h2 {}
+
+.pricing_cards {}
+
+.pricing_card {}
+
+.pricing_card h3 {}
+
+.pricing_card span {}
+
+table {}
+
+/* table head*/
+thead {}
+
+thead tr {}
+
+thead th {}
+
+/*table contenue*/
+tbody {}
+
+tbody tr {}
+
+tbody td {}
+
+tbody td .ticone {}
+
+/* bouton de pricing card*/
+.pricing_card a {}
 
 /************************************************************************* Footer ***********************************************************************************/
