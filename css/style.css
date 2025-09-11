@@ -19,8 +19,10 @@ body {
     width: 3%;
     border: 1em solid #131313;
     border-radius: 5em;
+    /* flex permet ici de centrer la flèche */
     display: flex;
     justify-content: center;
+    /* position fixed permet que le bouton suit le scroll /reste fixer au coin de l'écran auquel on l'attribut */
     position: fixed;
     bottom: 2em;
     right: 2em;
@@ -73,6 +75,7 @@ header {
 
 .navbar nav li {
     list-style: none;
+    position: relative;
 }
 
 .navbar nav li a {
@@ -80,6 +83,13 @@ header {
     font-size: 2em;
     font-weight: 400;
     text-decoration: none;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.navbar nav li:hover a {
+    font-size: 2.3em;
+    font-weight: 700;
 }
 
 .nav_social {
@@ -198,6 +208,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
 }
 
 .feature_card .card_icone {
@@ -221,6 +234,10 @@ header {
     color: #fff;
     font-size: 1.5em;
     text-align: center;
+}
+
+.feature_card:hover {
+    top: -3em;
 }
 
 /******                                Section : Team                                ******/
@@ -272,13 +289,43 @@ header {
     font-size: 1em;
 }
 
+.profil figure {
+    position: relative;
+}
+
 .profil figure img {
     width: 100%;
     border-radius: 80%;
+    filter: grayscale(1);
+}
+
+.profil figure:hover img {
+    /* Transform permet de zoomer l'image de la carte, lorsque la souris passe dessus. Transisiton et transform peuvent être utilisé SI un hover est en place. */
+    transform: scale(1.1);
+    /* Permet de passer de retirer l'effet grisatre de l'image de la carte, et donc elle va revenir à ses couleurs originaux. C'est effet aura leiu lorsqu'on passe la souris dessus (sans besoin de cliquer) grâce au :hover */
+    filter: grayscale(0);
+    transition: 1s;
+}
+
+.profil figure:hover .profil_socials {
+    top: 2em;
+    left: 0.8em;
 }
 
 .profil_socials {
+    position: absolute;
     width: 15%;
+    left: -150em;
+}
+
+.profil_socials a {
+    background-color: #fff;
+    padding: 0.2em;
+    border: 1 solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profil figcaption h4 {
@@ -334,13 +381,23 @@ header {
 }
 
 .calltoaction .btn {
-    color: #000;
-    padding: 0.3em 0.8em;
+    width: 10%;
+    position: relative;
+}
+
+.calltoaction .btn a {
     text-decoration: none;
+    color: #000;
+    text-align: center;
+    padding: 0.3em 0.8em;
     border: 0.15em solid #000;
     border-radius: 8%;
-    z-index: 1;
+    position: absolute;
+    transition: 2s;
+}
 
+.btn:hover a {
+    top: -1em;
 }
 
 /******                                Section : Blog                                ******/
@@ -385,23 +442,46 @@ header {
     align-items: center;
 }
 
-.blog_card figure {}
+.blog_card figure {
+    position: relative;
+}
 
 .blog_card figure img {
     width: 100%;
     border-radius: 5%;
 }
 
-.blog_card .info {}
+.blog_card:hover figure img {
+    filter: brightness(0.3);
+    transition: 1s;
+}
+
+.blog_card .info {
+    position: absolute;
+    left: -150em;
+}
+
+.blog_card:hover .info {
+    top: 4em;
+    left: 2em;
+}
 
 .blog_card .info .name {
     display: flex;
-    flex-wrap: nowrap;
+}
+
+.blog_card .info .name h2 {
+    width: 100%;
+    color: #fff;
 }
 
 .blog_card .info .date {
     display: flex;
-    flex-wrap: nowrap;
+}
+
+.blog_card .info .date h2 {
+    width: 100%;
+    color: #fff;
 }
 
 .blog_card .info_icone {
@@ -409,12 +489,14 @@ header {
     color: #fff;
 }
 
+.blog_card .info_icone path {
+    fill: #fff;
+}
+
 .blog_card .info h2 {
     font-size: 1em;
     font-weight: 700;
 }
-
-.blog_card article {}
 
 .blog_card article h3 {
     font-size: 1.8em;
@@ -474,10 +556,21 @@ header {
 
 .who_info {
     display: flex;
+    gap: 2em;
 }
 
 .container_who span {
     padding-bottom: 2em;
+}
+
+.nb {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.nb_text {
+    color: #646464;
+    font-weight: 500;
 }
 
 .container_who a {
@@ -530,6 +623,7 @@ header {
     border: 0.2em solid #fff;
     border-radius: 0.6em;
     flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 /* intérieur des cartes pricing*/
