@@ -15,7 +15,7 @@ body a {}
 /************************************************************************* Header ***********************************************************************************/
 
 header {
-    background-color: #4b98bd;
+    background-image: radial-gradient(circle, #b0dafc 1%, #4b98bd 44%, #4b98bd 45%);
     padding: 2em;
 }
 
@@ -68,6 +68,11 @@ header {
     width: 2em;
 }
 
+/*fill sur le path de l'icone svg permet de modifier la couleur de l'icône */
+.nav_social path {
+    fill: #fff;
+}
+
 /******                                ABOUT                                ******/
 
 .about {
@@ -99,7 +104,32 @@ header {
     margin: auto;
 }
 
-.about .form {}
+/* Cette partie permet de créer le champ email similaire à l'original*/
+.newsletter {
+    background-color: #fff;
+    width: 60%;
+    border: 1em solid #fff;
+    border-radius: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter input[type="email"] {
+    width: 80%;
+    padding-left: 1em;
+    font-size: 1em;
+    border: none;
+}
+
+.newsletter button {
+    background-color: #4b98bd;
+    color: #fff;
+    padding: 0 2em;
+    font-size: 0.8em;
+    border: 1em solid #4b98bd;
+    border-radius: 5em;
+    cursor: pointer;
+}
 
 /************************************************************************* Main ***********************************************************************************/
 
@@ -134,7 +164,7 @@ header {
 }
 
 .feature_card {
-    background-color: #4b98bd;
+    background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
     width: 100%;
     height: auto;
     padding: 5em;
@@ -149,6 +179,10 @@ header {
 .feature_card .card_icone {
     width: 4em;
     color: #fff;
+}
+
+.feature_card .card_icone path {
+    fill: #fff;
 }
 
 .feature_card h3 {
@@ -380,6 +414,9 @@ header {
 /******                                Section : Pricing                                ******/
 
 .pricing {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,9 +426,8 @@ header {
 /* Partie article et image */
 .container_who {
     width: 100%;
-    padding: 5em;
+    padding: 1em;
     display: flex;
-    flex-direction: flex;
     justify-content: center;
     align-items: center;
 }
@@ -412,50 +448,215 @@ header {
     font-size: 1.5em;
 }
 
-.pricing_info {
+.who_info {
     display: flex;
 }
 
-.container_who span {}
+.container_who span {
+    padding-bottom: 2em;
+}
 
-.container_who a {}
+.container_who a {
+    background-color: #4b98bd;
+    text-decoration: none;
+    padding: 0.7em;
+    color: #fff;
+    border: 0.2em solid #4b98bd;
+    border-radius: 0.3em;
+}
 
 .container_who .illustration {
-    width: 40%;
+    margin: auto;
+    padding: 1em;
 }
 
 /* Partie tableau du pricing */
-.container_table {}
+.container_pricing {
+    width: 80%;
+    padding: 1em;
+}
 
-.container_table h2 {}
+.container_pricing h2 {
+    padding-bottom: 0.2em;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+}
 
-.pricing_cards {}
+.container_pricing p {
+    width: 60%;
+    padding-bottom: 0.5em;
+    margin: auto;
+    color: #333333;
+    font-size: 1.3em;
+    text-align: center;
+}
 
-.pricing_card {}
+.pricing_cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+}
 
-.pricing_card h3 {}
+.pricing_card {
+    background-color: #fff;
+    width: 25%;
+    padding: 1em;
+    border: 0.2em solid #fff;
+    border-radius: 0.6em;
+    flex-direction: column;
+}
 
-.pricing_card span {}
+/* intérieur des cartes pricing*/
+.pricing_card h3 {
+    font-size: 2em;
+    text-align: center;
+}
 
-table {}
+.pricing_card h4 {
+    color: #4b98bd;
+    padding-bottom: 0.1em;
+    font-size: 3em;
+    text-align: center;
+}
 
-/* table head*/
-thead {}
+.pricing_card span {
+    color: #000;
+    font-size: 0.5em;
+}
 
-thead tr {}
+.container_option {
+    padding: 3em 0;
+    display: flex;
+    gap: 1em;
 
-thead th {}
+}
 
-/*table contenue*/
-tbody {}
+.option_icone {
+    width: 10%;
+    line-height: 1.5em;
+}
 
-tbody tr {}
+.option {
+    width: 60%;
+    flex-direction: column;
+    line-height: 2em;
+}
 
-tbody td {}
+.option p {
+    color: #000;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 600;
+}
 
-tbody td .ticone {}
+.contained {
+    width: 20%;
+    flex-direction: column;
+    text-align: right;
+    line-height: 2em;
+}
+
+.contained p {
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.ticone {
+    width: 2em;
+    color: #fff;
+}
+
+.ticone_no {
+    width: 2em;
+    color: #fff;
+}
 
 /* bouton de pricing card*/
-.pricing_card a {}
+.btn_pricing {
+    background-color: #4b98bd;
+    border: 1em solid #4b98bd;
+    border-radius: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_card a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+}
 
 /************************************************************************* Footer ***********************************************************************************/
+
+footer {
+    background-image: radial-gradient(circle, #333 1%, #131313 44%, #131313 45%);
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Les icones des réseaux sociaux */
+.footer_socials {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+}
+
+.container_social {
+    width: 25%;
+    padding: 0.3em;
+    border: 0.3em solid #969696;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icone {
+    width: 3em;
+}
+
+.footer_socials path {
+    fill: #969696;
+}
+
+/* list des termes et conditions */
+.footer_nav {
+    padding: 2em;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_nav li {
+    list-style: none;
+    padding: 0 1.7em;
+}
+
+.footer_nav li a {
+    text-decoration: none;
+    color: #969696;
+    font-size: 1.3em;
+}
+
+/* crédits */
+
+small {
+    text-decoration: none;
+    color: #969696;
+    font-size: 1.3em;
+}
+
+/************************************************************************* MEDIA QUERIES ***********************************************************************************/
