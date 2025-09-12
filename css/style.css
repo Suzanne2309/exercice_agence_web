@@ -195,6 +195,7 @@ header {
 .features_cards {
     width: 150vh;
     display: flex;
+    gap: 2em;
 }
 
 .feature_card {
@@ -202,7 +203,6 @@ header {
     width: 100%;
     height: auto;
     padding: 5em;
-    margin: 1.5em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -853,65 +853,214 @@ small {
     }
 
     .features h2 {
-        padding: 0.5em;
-        font-size: 3em;
-        font-weight: 500;
+        padding: 1em 0.2em 0 0;
+        font-size: 2em;
     }
 
     .features p {
-        width: 30%;
+        width: 100%;
         color: #646464;
-        padding-bottom: 1em;
-        font-size: 1.5em;
-        text-align: center;
+        padding: 0.5em;
+        font-size: 0.8em;
     }
 
     .features_cards {
-        width: 150vh;
+        width: 100%;
+        padding: 2em 0 0 0;
         display: flex;
+        flex-direction: column;
     }
 
     .feature_card {
-        background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
-        width: 100%;
-        height: auto;
-        padding: 5em;
-        margin: 1.5em;
-        border-radius: 1em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        position: relative;
-        transition: 1s;
+        padding: 0.5em;
+        transition: 0s;
     }
 
     .feature_card .card_icone {
-        width: 4em;
-        color: #fff;
-    }
-
-    .feature_card .card_icone path {
-        fill: #fff;
+        width: 3.5em;
     }
 
     .feature_card h3 {
-        padding: 0.5em;
-        color: #fff;
-        font-size: 2em;
-        font-weight: 600;
+        font-size: 1.3em;
     }
 
     .feature_card p {
-        width: 100%;
         color: #fff;
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1em;
     }
 
+    /* On retire l'effet d'hover */
     .feature_card:hover {
-        top: -3em;
+        top: 0;
     }
 
+    /* Team */
+    .team {
+        padding: 1em;
+        margin: 0;
+    }
+
+    .team h2 {
+        width: 100%;
+        padding: 0.5em 0.5em 0.8em 0.5em;
+        font-size: 1.3em;
+    }
+
+    .team p {
+        width: 100%;
+        padding-bottom: 1em;
+        font-size: 0.8em;
+    }
+
+    .profils {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profil {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .profil figure img {
+        width: 100%;
+        border-radius: 80%;
+        filter: grayscale(0);
+    }
+
+    .profil figure:hover img {
+        /* On met tous à 0 pour retirer les effets */
+        transform: scale(0);
+        filter: grayscale(0);
+        transition: 0s;
+    }
+
+    .profil figure:hover .profil_socials {
+        top: 0em;
+        left: 0em;
+    }
+
+    .profil_socials {
+        /* On modifie la position de socials pour qu'ils apparaissent sur les profils de façon volontaire*/
+        top: 5em;
+        left: 1.2em;
+    }
+
+    /* Parallax */
+    .calltoaction {
+        padding: 10em 0;
+        margin: auto;
+    }
+
+    .calltoaction h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .calltoaction p {
+        width: 100%;
+        padding: 0 0.5em 1em 0.5em;
+        font-size: 1em;
+    }
+
+    .calltoaction .btn {
+        width: 30%;
+        position: relative;
+    }
+
+    .calltoaction .btn a {
+        transition: 0s;
+    }
+
+    .btn:hover a {
+        top: 0em;
+    }
+
+    /* Blog */
+    .blog {
+        padding-top: 4em;
+        margin: 0;
+    }
+
+    .blog h2 {
+        width: 100%;
+        padding-bottom: 0.8em;
+        font-size: 1.5em;
+    }
+
+    .container_blog {
+        width: 100%;
+        height: auto;
+        padding: 0em;
+        margin: 0em;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog_card {
+        width: 100%;
+        padding: 1.3em 0.5em;
+    }
+
+    .blog_card:hover figure img {
+        /* On retire les effets */
+        filter: brightness(1);
+        transition: 0s;
+    }
+
+    .blog_card .info {
+        background-color: #969696;
+        filter: opacity(0.8);
+        width: 35%;
+        border: 0.1em solid #969696;
+        border-radius: 10%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .blog_card:hover .info {
+        top: 0;
+        left: 0;
+    }
+
+    .blog_card .info .name h2 {
+        width: 70%;
+        font-size: 0.8em;
+        color: #000;
+    }
+
+    .blog_card .info .date h2 {
+        width: 70%;
+        font-size: 0.8em;
+        color: #000;
+    }
+
+    .blog_card .info_icone {
+        width: 1.8em;
+    }
+
+    .blog_card .info_icone path {
+        fill: #000;
+    }
+
+    .blog_card .info h2 {
+        font-size: 1em;
+    }
+
+    .blog_card article h3 {
+        font-size: 1.5em;
+    }
+
+    .blog_card article p {
+        font-size: 1em;
+    }
+
+    .blog_card a {
+        padding: 0.5em 0;
+        font-size: 1em;
+    }
+
+    /*  */
 }
