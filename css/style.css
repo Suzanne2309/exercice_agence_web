@@ -778,3 +778,140 @@ small {
 }
 
 /************************************************************************* MEDIA QUERIES ***********************************************************************************/
+
+@media only screen and (max-width:750px) {
+
+    /* Logo */
+    .navbar {
+        padding: 0.5em;
+    }
+
+    .navbar .logo {
+        width: 10%;
+    }
+
+    .navbar .logo a {
+        font-size: 1.5em;
+    }
+
+    /* menu burger */
+
+    /* socials */
+
+    /* About */
+    .about {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about article {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .about article h1 {
+        font-size: 2em;
+    }
+
+    .about article p {
+        width: 100%;
+        padding: 0.5;
+        font-size: 0.8em;
+    }
+
+    .about figure {
+        width: 100%;
+    }
+
+    /* Champ de formulaire email */
+    .newsletter {
+        width: 100%;
+        border: 1em solid #fff;
+        border-radius: 5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .newsletter input[type="email"] {
+        width: 60%;
+        padding-left: 0em;
+        font-size: 0.8em;
+    }
+
+    .newsletter button {
+        padding: 0 0.5em;
+        font-size: 0.6em;
+        border: 1em solid #4b98bd;
+        border-radius: 5em;
+        cursor: pointer;
+    }
+
+    /* Features */
+    .features {
+        margin: 0.5em;
+    }
+
+    .features h2 {
+        padding: 0.5em;
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    .features p {
+        width: 30%;
+        color: #646464;
+        padding-bottom: 1em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .features_cards {
+        width: 150vh;
+        display: flex;
+    }
+
+    .feature_card {
+        background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
+        width: 100%;
+        height: auto;
+        padding: 5em;
+        margin: 1.5em;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        transition: 1s;
+    }
+
+    .feature_card .card_icone {
+        width: 4em;
+        color: #fff;
+    }
+
+    .feature_card .card_icone path {
+        fill: #fff;
+    }
+
+    .feature_card h3 {
+        padding: 0.5em;
+        color: #fff;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .feature_card p {
+        width: 100%;
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .feature_card:hover {
+        top: -3em;
+    }
+
+}
