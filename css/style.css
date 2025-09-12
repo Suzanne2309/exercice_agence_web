@@ -16,7 +16,7 @@ body {
 /* le parent qui sera en position relative */
 .btn_skip {
     background-color: #131313;
-    width: 3%;
+    width: 5%;
     border: 1em solid #131313;
     border-radius: 5em;
     /* flex permet ici de centrer la flèche */
@@ -124,12 +124,12 @@ header {
 }
 
 .about article h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     line-height: 1.1em;
 }
 
 .about article p {
-    width: 68%;
+    width: 100%;
     padding: 1em 0.5em 1em 0;
     font-size: 1.5em;
     font-weight: 300;
@@ -144,7 +144,7 @@ header {
 /* Cette partie permet de créer le champ email similaire à l'original*/
 .newsletter {
     background-color: #fff;
-    width: 60%;
+    width: 100%;
     border: 1em solid #fff;
     border-radius: 5em;
     display: flex;
@@ -152,7 +152,7 @@ header {
 }
 
 .newsletter input[type="email"] {
-    width: 80%;
+    width: 100%;
     padding-left: 1em;
     font-size: 1em;
     border: none;
@@ -290,6 +290,7 @@ header {
 
 .profil p {
     width: 100%;
+    padding-bottom: 2em;
     font-size: 1em;
 }
 
@@ -333,6 +334,7 @@ header {
 }
 
 .profil figcaption h4 {
+    padding-top: 2em;
     font-size: 1.2em;
     text-align: center;
 }
