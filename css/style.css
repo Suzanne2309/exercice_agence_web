@@ -42,19 +42,19 @@ body {
 
 header {
     background-image: radial-gradient(circle, #b0dafc 1%, #4b98bd 44%, #4b98bd 45%);
-    padding: 2em;
+    padding: 1em;
 }
 
 /******                              NAVBAR                           ******/
 .navbar {
-    padding: 2em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navbar .logo {
-    width: 15%;
+    width: 10%;
 }
 
 .navbar .logo a {
@@ -64,34 +64,30 @@ header {
     text-decoration: none;
 }
 
-.navbar nav {
-    width: 70%;
+.navbar .principale {
+    width: 100%;
+    padding: 0 1em;
 }
 
-.navbar nav ul {
+.navbar .principale ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar nav li {
+.navbar .principale li {
+    width: 12.5%;
     list-style: none;
-    position: relative;
 }
 
-.navbar nav li a {
+.navbar .principale li a {
     color: #fff;
     font-size: 2em;
     font-weight: 400;
     text-decoration: none;
-    position: absolute;
-    transition: 0.3s;
 }
 
-.navbar nav li:hover a {
-    font-size: 2.3em;
-    font-weight: 700;
-}
-
+/* icones réseaux sociaux */
 .nav_social {
     width: 15%;
     display: flex;
@@ -171,7 +167,6 @@ header {
 .features {
     width: 100%;
     padding: 1em;
-    margin: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +196,6 @@ header {
 .feature_card {
     background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
     width: 100%;
-    height: auto;
     padding: 5em;
     border-radius: 1em;
     display: flex;
@@ -210,6 +204,10 @@ header {
     align-items: center;
     cursor: pointer;
     position: relative;
+}
+
+.feature_card:hover {
+    top: -1.8em;
     transition: 1s;
 }
 
@@ -236,16 +234,11 @@ header {
     text-align: center;
 }
 
-.feature_card:hover {
-    top: -3em;
-}
-
 /******                                Section : Team                                ******/
 
 .team {
     width: 100%;
     padding: 1em;
-    margin: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,14 +263,16 @@ header {
 }
 
 .profils {
-    width: 100vh;
+    width: 100%;
     display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
 }
 
 .profil {
     width: 20%;
     padding: 0.5em;
-    margin: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -285,7 +280,7 @@ header {
 }
 
 .profil p {
-    width: auto;
+    width: 100%;
     font-size: 1em;
 }
 
@@ -338,9 +333,9 @@ header {
 .calltoaction {
     /*Le padding permet ici d'aggrandir la surface de l'effet parallax*/
     padding: 15em 0;
-    margin: 3em 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -372,8 +367,8 @@ header {
 }
 
 .calltoaction p {
-    width: 40%;
-    color: #333333;
+    width: 100%;
+    color: #080808;
     padding-bottom: 1em;
     font-size: 1.5em;
     text-align: center;
@@ -404,8 +399,7 @@ header {
 
 .blog {
     width: 100%;
-    padding: 1em;
-    margin: 3em;
+    padding: 3em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,7 +419,6 @@ header {
     width: 100%;
     height: auto;
     padding: 3em;
-    margin: 1.5em;
     border-radius: 1em;
     display: flex;
     justify-content: space-evenly;
@@ -520,9 +513,9 @@ header {
 /******                                Section : Pricing                                ******/
 
 .pricing {
-    width: 70%;
+    width: 100%;
     margin: auto;
-    padding-bottom: 8em;
+    padding: 1em 8em 5em 8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -861,9 +854,6 @@ small {
     }
 
     /* Features */
-    .features {
-        margin: 0.5em;
-    }
 
     .features h2 {
         padding: 1em 0.2em 0 0;
@@ -910,7 +900,6 @@ small {
     /* Team */
     .team {
         padding: 1em;
-        margin: 0;
     }
 
     .team h2 {
@@ -993,7 +982,6 @@ small {
     /* Blog */
     .blog {
         padding-top: 4em;
-        margin: 0;
     }
 
     .blog h2 {
@@ -1006,7 +994,6 @@ small {
         width: 100%;
         height: auto;
         padding: 0em;
-        margin: 0em;
         flex-direction: column;
         justify-content: center;
     }
@@ -1166,11 +1153,6 @@ small {
     }
 
     /* Footer */
-    footer {
-        height: 30vh;
-        /* modifier ?*/
-    }
-
     /* Les icones des réseaux sociaux */
     .footer_socials {
         width: 70%;
