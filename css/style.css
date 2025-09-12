@@ -1166,4 +1166,46 @@ small {
     }
 
     /* Footer */
+    footer {
+        height: 30vh;
+        /* modifier ?*/
+    }
+
+    /* Les icones des réseaux sociaux */
+    .footer_socials {
+        width: 70%;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .container_social {
+        width: 25%;
+        padding: 0.1em;
+        border: 0.2em solid #969696;
+        border-radius: 50%;
+    }
+
+    .footer_icone {
+        width: 2em;
+    }
+
+    /* list des termes et conditions */
+    .footer_nav {
+        padding: 0.5em 1;
+    }
+
+    .footer_nav li {
+        padding: 0 0.8em;
+    }
+
+    .footer_nav li a {
+        font-size: 1em;
+    }
+
+    /* crédits */
+
+    small {
+        padding-bottom: 1.5em;
+        font-size: 0.8em;
+    }
 }
