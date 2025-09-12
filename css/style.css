@@ -326,7 +326,7 @@ header {
 .profil_socials a {
     background-color: #fff;
     padding: 0.2em;
-    border: 1 solid #fff;
+    border: 1em solid #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -830,7 +830,7 @@ small {
 
     .about article p {
         width: 100%;
-        padding: 0.5;
+        padding: 0.5em;
         font-size: 0.8em;
     }
 
@@ -1186,7 +1186,7 @@ small {
 
     /* list des termes et conditions */
     .footer_nav {
-        padding: 0.5em 1;
+        padding: 0.5em 1em;
     }
 
     .footer_nav li {
@@ -1248,7 +1248,7 @@ small {
 
     .about article p {
         width: 100%;
-        padding: 0.5;
+        padding: 0.5em;
         font-size: 0.8em;
     }
 
@@ -1597,7 +1597,7 @@ small {
 
     /* list des termes et conditions */
     .footer_nav {
-        padding: 0.5em 1;
+        padding: 0.5em 1em;
     }
 
     .footer_nav li {
