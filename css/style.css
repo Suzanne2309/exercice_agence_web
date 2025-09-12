@@ -649,19 +649,17 @@ header {
 }
 
 .container_option {
+    width: 33%;
     padding: 3em 0;
     display: flex;
-    gap: 1em;
-
+    gap: 2em;
 }
 
 .option_icone {
-    width: 10%;
     line-height: 1.5em;
 }
 
 .option {
-    width: 60%;
     flex-direction: column;
     line-height: 2em;
 }
@@ -674,7 +672,6 @@ header {
 }
 
 .contained {
-    width: 20%;
     flex-direction: column;
     text-align: right;
     line-height: 2em;
@@ -789,7 +786,7 @@ small {
     font-size: 1.3em;
 }
 
-/************************************************************************* MEDIA QUERIES ***********************************************************************************/
+/*********************************************************************** MEDIA QUERIES mobile *********************************************************************************/
 
 @media only screen and (max-width:750px) {
 
@@ -838,7 +835,8 @@ small {
     }
 
     .about figure {
-        width: 100%;
+        /* On le retire pour éviter le scroll trop long sur la page */
+        display: none;
     }
 
     /* Champ de formulaire email */
@@ -883,9 +881,12 @@ small {
         padding: 2em 0 0 0;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .feature_card {
+        width: 100%;
         padding: 0.5em;
         transition: 0s;
     }
@@ -1076,6 +1077,7 @@ small {
     /* Pricing */
     .pricing {
         width: 100%;
+        padding: 1em;
         padding-bottom: 4em;
     }
 
@@ -1134,6 +1136,417 @@ small {
 
     .pricing_card {
         width: 100%;
+    }
+
+    /* intérieur des cartes pricing*/
+    .pricing_card h3 {
+        font-size: 1.5em;
+    }
+
+    .pricing_card h4 {
+        font-size: 2.5em;
+    }
+
+    .container_option {
+        padding: 2em 0;
+        gap: 0.7em;
+    }
+
+    .option_icone {
+        width: 10%;
+        line-height: 3em;
+    }
+
+    .ticone {
+        width: 1.5em;
+    }
+
+    .ticone_no {
+        width: 1.5em;
+    }
+
+    /* Footer */
+    /* Les icones des réseaux sociaux */
+    .footer_socials {
+        width: 70%;
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .container_social {
+        width: 25%;
+        padding: 0.1em;
+        border: 0.2em solid #969696;
+        border-radius: 50%;
+    }
+
+    .footer_icone {
+        width: 2em;
+    }
+
+    /* list des termes et conditions */
+    .footer_nav {
+        padding: 0.5em 1;
+    }
+
+    .footer_nav li {
+        padding: 0 0.8em;
+    }
+
+    .footer_nav li a {
+        font-size: 1em;
+    }
+
+    /* crédits */
+
+    small {
+        padding-bottom: 1.5em;
+        font-size: 0.8em;
+    }
+}
+
+
+/*********************************************************************** MEDIA QUERIES tablette *********************************************************************************/
+@media only screen and (min-width:751px) and (max-width: 1025px) {
+
+    /* button skip-to caché sur mobile*/
+    .btn_skip {
+        display: none;
+    }
+
+    /* Logo */
+    .navbar {
+        padding: 0.5em;
+    }
+
+    .navbar .logo {
+        width: 10%;
+    }
+
+    .navbar .logo a {
+        font-size: 1.5em;
+    }
+
+    /* menu burger */
+
+    /* socials */
+
+    /* About */
+    .about {
+        padding: 1em;
+        display: flex;
+    }
+
+    .about article {
+        width: 50%;
+        padding: 1em;
+    }
+
+    .about article h1 {
+        font-size: 2em;
+    }
+
+    .about article p {
+        width: 100%;
+        padding: 0.5;
+        font-size: 0.8em;
+    }
+
+    .about figure {
+        width: 50%;
+    }
+
+    /* Champ de formulaire email */
+    .newsletter {
+        width: 100%;
+        border: 1em solid #fff;
+        border-radius: 5em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .newsletter input[type="email"] {
+        width: 60%;
+        padding-left: 0em;
+        font-size: 0.8em;
+    }
+
+    .newsletter button {
+        padding: 0 0.5em;
+        font-size: 0.6em;
+        border: 1em solid #4b98bd;
+        border-radius: 5em;
+        cursor: pointer;
+    }
+
+    /* Features */
+
+    .features h2 {
+        padding: 1em 0.2em 0 0;
+        font-size: 2em;
+    }
+
+    .features p {
+        width: 100%;
+        color: #646464;
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .features_cards {
+        width: 100%;
+        padding: 2em 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /********************************* Une carte est plus petite que les deux autres, mais je n'arrive pas à voir le soucis ********************************/
+    .feature_card {
+        width: 33%;
+        padding: 0.5em;
+        transition: 0s;
+        position: static;
+    }
+
+    .feature_card h3 {
+        font-size: 1.3em;
+    }
+
+    .feature_card p {
+        color: #fff;
+        font-size: 1em;
+    }
+
+    /* On retire l'effet d'hover */
+    .feature_card:hover {
+        top: 0;
+    }
+
+    /* Team */
+    .team {
+        padding: 3em 1em;
+    }
+
+    .team h2 {
+        width: 100%;
+        padding: 0.5em 0.5em 0.8em 0.5em;
+        font-size: 1.3em;
+    }
+
+    .team p {
+        width: 100%;
+        padding-bottom: 1em;
+        font-size: 0.8em;
+    }
+
+    .profils {
+        width: 100%;
+        display: flex;
+    }
+
+    .profil {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .profil figure img {
+        width: 100%;
+        border-radius: 80%;
+        filter: grayscale(0);
+    }
+
+    .profil figure:hover img {
+        /* On met tous à 0 pour retirer les effets */
+        transform: scale(0);
+        filter: grayscale(0);
+        transition: 0s;
+    }
+
+    .profil figure:hover .profil_socials {
+        top: 0em;
+        left: 0em;
+    }
+
+    .profil_socials {
+        /* On modifie la position de socials pour qu'ils apparaissent sur les profils de façon volontaire*/
+        top: 5em;
+        left: 1.2em;
+    }
+
+    /* Parallax */
+    .calltoaction {
+        padding: 10em 0;
+        margin: auto;
+    }
+
+    .calltoaction h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .calltoaction p {
+        width: 100%;
+        padding: 0 0.5em 1em 0.5em;
+        font-size: 1em;
+    }
+
+    .calltoaction .btn {
+        width: 10%;
+        position: static;
+    }
+
+    .calltoaction .btn a {
+        transition: 0s;
+    }
+
+    .btn:hover a {
+        top: 0em;
+    }
+
+    /* Blog */
+    .blog {
+        padding-top: 4em;
+    }
+
+    .blog h2 {
+        width: 100%;
+        padding-bottom: 0.8em;
+        font-size: 1.5em;
+    }
+
+    .container_blog {
+        width: 100%;
+        height: auto;
+        padding: 0em;
+        justify-content: center;
+    }
+
+    .blog_card {
+        width: 33%;
+        padding: 1.3em 0.5em;
+    }
+
+    .blog_card:hover figure img {
+        /* On retire les effets */
+        filter: brightness(1);
+        transition: 0s;
+    }
+
+    .blog_card .info {
+        background-color: #969696;
+        filter: opacity(0.8);
+        width: 35%;
+        border: 0.1em solid #969696;
+        border-radius: 10%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .blog_card:hover .info {
+        top: 0;
+        left: 0;
+    }
+
+    .blog_card .info .name h2 {
+        width: 70%;
+        font-size: 0.8em;
+        color: #000;
+    }
+
+    .blog_card .info .date h2 {
+        width: 70%;
+        font-size: 0.8em;
+        color: #000;
+    }
+
+    .blog_card .info_icone {
+        width: 1.8em;
+    }
+
+    .blog_card .info_icone path {
+        fill: #000;
+    }
+
+    .blog_card .info h2 {
+        font-size: 1em;
+    }
+
+    .blog_card article h3 {
+        font-size: 1.5em;
+    }
+
+    .blog_card article p {
+        font-size: 1em;
+    }
+
+    .blog_card a {
+        padding: 0.5em 0;
+        font-size: 1em;
+    }
+
+    /* Pricing */
+    .pricing {
+        width: 100%;
+        padding: 1em;
+        padding-bottom: 4em;
+    }
+
+    /* Partie article et image */
+    .container_who {
+        width: 100%;
+        padding: 0.5em;
+        flex-direction: column;
+    }
+
+    .container_who article {
+        width: 100%;
+    }
+
+    .container_who article h2 {
+        font-size: 2em;
+    }
+
+    .container_who article p {
+        font-size: 1em;
+    }
+
+    .nb {
+        font-size: 1.3em;
+    }
+
+    .nb_text {
+        font-size: 0.8em;
+    }
+
+    .container_who .illustration {
+        /* Permet de cacher l'image car pas forcément nécessaire en mobile. Elle rallonge le scroll */
+        display: none;
+    }
+
+    /* Partie tableau du pricing */
+    .container_pricing {
+        width: 100%;
+        padding: 3em 0;
+    }
+
+    .container_pricing h2 {
+        font-size: 2em;
+    }
+
+    .container_pricing p {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    .pricing_cards {
+        gap: 1em;
+    }
+
+    .pricing_card {
+        width: 33%;
     }
 
     /* intérieur des cartes pricing*/
