@@ -54,7 +54,8 @@ header {
 }
 
 .navbar .logo {
-    width: 10%;
+    width: 15%;
+    padding: 1em;
 }
 
 .navbar .logo a {
@@ -65,19 +66,25 @@ header {
 }
 
 .navbar .principale {
-    width: 100%;
-    padding: 0 1em;
+    width: 70%;
+    padding: 1em 2em;
 }
 
 .navbar .principale ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .navbar .principale li {
-    width: 12.5%;
+    width: 100%;
     list-style: none;
+
+}
+
+.navbar .principale li:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
 }
 
 .navbar .principale li a {
@@ -188,14 +195,15 @@ header {
 }
 
 .features_cards {
-    width: 150vh;
+    width: 100%;
+    padding: 2em;
     display: flex;
     gap: 2em;
 }
 
 .feature_card {
     background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
-    width: 100%;
+    width: 33%;
     padding: 5em;
     border-radius: 1em;
     display: flex;
@@ -208,7 +216,8 @@ header {
 
 .feature_card:hover {
     top: -1.8em;
-    transition: 1s;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Ne fonctionne pas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    transition: 2s;
 }
 
 .feature_card .card_icone {
