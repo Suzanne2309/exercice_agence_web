@@ -687,9 +687,17 @@ header {
     color: #fff;
 }
 
+.ticone path {
+    fill: #4f7c4f;
+}
+
 .ticone_no {
     width: 2em;
     color: #fff;
+}
+
+.ticone_no path {
+    fill: #974136;
 }
 
 /* bouton de pricing card*/
@@ -780,6 +788,11 @@ small {
 /************************************************************************* MEDIA QUERIES ***********************************************************************************/
 
 @media only screen and (max-width:750px) {
+
+    /* button skip-to caché sur mobile*/
+    .btn_skip {
+        display: none;
+    }
 
     /* Logo */
     .navbar {
@@ -1062,5 +1075,95 @@ small {
         font-size: 1em;
     }
 
-    /*  */
+    /* Pricing */
+    .pricing {
+        width: 100%;
+        padding-bottom: 4em;
+    }
+
+    /* Partie article et image */
+    .container_who {
+        width: 100%;
+        padding: 0.5em;
+        flex-direction: column;
+    }
+
+    .container_who article {
+        width: 100%;
+    }
+
+    .container_who article h2 {
+        font-size: 2em;
+    }
+
+    .container_who article p {
+        font-size: 1em;
+    }
+
+    .nb {
+        font-size: 1.3em;
+    }
+
+    .nb_text {
+        font-size: 0.8em;
+    }
+
+    .container_who .illustration {
+        /* Permet de cacher l'image car pas forcément nécessaire en mobile. Elle rallonge le scroll */
+        display: none;
+    }
+
+    /* Partie tableau du pricing */
+    .container_pricing {
+        width: 100%;
+        padding: 3em 0;
+    }
+
+    .container_pricing h2 {
+        font-size: 2em;
+    }
+
+    .container_pricing p {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    .pricing_cards {
+        flex-direction: column;
+        gap: 4em;
+    }
+
+    .pricing_card {
+        width: 100%;
+    }
+
+    /* intérieur des cartes pricing*/
+    .pricing_card h3 {
+        font-size: 1.5em;
+    }
+
+    .pricing_card h4 {
+        font-size: 2.5em;
+    }
+
+    .container_option {
+        padding: 2em 0;
+        gap: 0.7em;
+    }
+
+    .option_icone {
+        width: 10%;
+        line-height: 3em;
+    }
+
+    .ticone {
+        width: 1.5em;
+    }
+
+    .ticone_no {
+        width: 1.5em;
+    }
+
+    /* Footer */
 }
