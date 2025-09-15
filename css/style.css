@@ -828,6 +828,7 @@ small {
         display: none;
         background-color: #333;
         width: 100%;
+        height: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -845,16 +846,25 @@ small {
     }
 
     #burger{
-        width: 100%;
-        height: 100%;
+        display: block;
+        width: 15%;
+        height: 15%;
+        position: relative;
     }
 
     #burger .bars{
         width: 50%;
+        position: absolute;
+        top: -0.7em;
+        right: 1em;
     }
 
     #burger .croix{
+        display: none;
         width: 50%;
+        position: absolute;
+        top: -0.7em;
+        right: 1em;
     }
 
     /**** Fin buger ****/

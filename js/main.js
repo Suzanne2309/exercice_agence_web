@@ -43,19 +43,41 @@ const menu = document.getElementById('principale');
  
 burger.addEventListener('click', () => {
     //Fonction apparition du menu nav
-    if (menu.style.display === "none") {
+    if (menu.style.display === "flex") {
 
         menu.style.display = "none";
 
     } else {
 
-        menu.style.display = "none";
-
+        menu.style.display = "flex";
     }
-
-    //click sur croix ferme le menu
-    burger.classList.toggle('active')
 })
 
-//Création croix
 
+    //Switch de bars vers croix
+const bars = document.querySelector('.bars');
+const croix = document.querySelector('.croix');
+
+burger.addEventListener('click', () => {
+    
+    if (bars.style.display === "none") {
+
+        bars.style.display = "block";
+
+    } else {
+
+        bars.style.display = "none";
+    }
+})
+
+burger.addEventListener('click', () => {
+
+    if (croix.style.display === "block") {
+
+        croix.style.display = "none";
+
+    } else {
+        
+        croix.style.display = "block"
+    }
+})
