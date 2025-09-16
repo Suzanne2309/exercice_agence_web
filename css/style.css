@@ -821,6 +821,9 @@ small {
     /* socials */
     .nav_social {
         width: 20%;
+        position: absolute;
+        top: 1.8em;
+        right: 5em;
     }
 
     /**** menu burger ****/
@@ -828,21 +831,26 @@ small {
         display: none;
         background-color: #333;
         width: 100%;
-        height: 100%;
+        padding: 0.2em;
+        position: absolute;
+        top: 4em;
+        left: 0;
+        bottom: -20em;
+    }
+
+    #principale ul {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
     #principale li {
-        width: 14%;
+        width: 100%;
     }
 
-    #principale li .links {
-        font-size: 0.2em;
+    .navbar #principale li a {
+        font-size: 1em;
     }
 
     #burger{
