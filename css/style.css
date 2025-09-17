@@ -113,7 +113,7 @@ header {
 }
 
 /* Menu burger (caché) */
-#burger{
+#burger {
     display: none;
 }
 
@@ -211,7 +211,7 @@ header {
 .feature_card {
     background-image: radial-gradient(circle, #8ccbff 0.1%, #4b98bd 44%, #4b98bd 45%);
     width: 33%;
-    padding: 5em;
+    padding: 3em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -223,12 +223,11 @@ header {
 
 .feature_card:hover {
     top: -1.8em;
-    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Ne fonctionne pas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
     transition: 2s;
 }
 
 .feature_card .card_icone {
-    width: 4em;
+    width: 3.5em;
     color: #fff;
 }
 
@@ -237,6 +236,8 @@ header {
 }
 
 .feature_card h3 {
+    width: 100%;
+    text-align: center;
     padding: 0.5em;
     color: #fff;
     font-size: 2em;
@@ -436,16 +437,15 @@ header {
 .container_blog {
     width: 100%;
     height: auto;
-    padding: 3em;
-    border-radius: 1em;
+    padding: 2em;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
+    gap: 0.8em;
 }
 
 .blog_card {
-    width: 30%;
-    border-radius: 1em;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -453,6 +453,7 @@ header {
 }
 
 .blog_card figure {
+    width: 100%;
     position: relative;
 }
 
@@ -508,14 +509,19 @@ header {
     font-weight: 700;
 }
 
+.blog_card article {
+    width: 100%;
+}
+
 .blog_card article h3 {
-    font-size: 1.8em;
+    width: 100%;
+    font-size: 1.5em;
     font-weight: 500;
 }
 
 .blog_card article p {
     width: 100%;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .blog_card a {
@@ -809,6 +815,7 @@ small {
         justify-content: space-between;
         position: relative;
     }
+
     /* Logo */
     .navbar .logo {
         width: 20%;
@@ -855,14 +862,14 @@ small {
         font-size: 2em;
     }
 
-    #burger{
+    #burger {
         display: block;
         width: 15%;
         height: 15%;
         position: relative;
     }
 
-    #burger .bars{
+    #burger .bars {
         width: 50%;
         position: absolute;
         top: -0.7em;
@@ -873,7 +880,7 @@ small {
         color: #fff;
     }
 
-    #burger .croix{
+    #burger .croix {
         display: none;
         width: 50%;
         position: absolute;
@@ -1293,21 +1300,21 @@ small {
         font-size: 3em;
     }
 
-    #burger{
+    #burger {
         display: block;
         width: 10%;
         height: 10%;
         position: relative;
     }
 
-    #burger .bars{
+    #burger .bars {
         width: 50%;
         position: absolute;
         top: -2.8em;
         right: 1em;
     }
 
-    #burger .croix{
+    #burger .croix {
         display: none;
         width: 50%;
         position: absolute;
@@ -1641,94 +1648,225 @@ small {
     }
 
     /* Footer */
-footer {
-    background-image: radial-gradient(circle, #333 1%, #131313 44%, #131313 45%);
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    footer {
+        background-image: radial-gradient(circle, #333 1%, #131313 44%, #131313 45%);
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Les icones des réseaux sociaux */
+    .footer_socials {
+        width: 50%;
+        gap: 2em;
+    }
+
+    .container_social {
+        width: 25%;
+        padding: 0.4em;
+        border: 0.3em solid #969696;
+        border-radius: 70%;
+    }
+
+    .footer_icone {
+        width: 5em;
+    }
+
+    .footer_socials path {
+        fill: #969696;
+    }
+
+    /* list des termes et conditions */
+    .footer_nav {
+        padding: 2em;
+    }
+
+    .footer_nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_nav li {
+        list-style: none;
+        padding: 0 1.7em;
+    }
+
+    .footer_nav li a {
+        text-decoration: none;
+        color: #969696;
+        font-size: 1.3em;
+    }
+
+    /* crédits */
+
+    small {
+        text-decoration: none;
+        color: #969696;
+        font-size: 1.3em;
+    }
 }
 
-/* Les icones des réseaux sociaux */
-.footer_socials {
-    width: 50%;
-    gap: 2em;
-}
+/*****************************************************************  Media Queries Ecran moyen ********************************************************************/
 
-.container_social {
-    width: 25%;
-    padding: 0.4em;
-    border: 0.3em solid #969696;
-    border-radius: 70%;
-}
+@media only screen and (min-width:1026px) and (max-width: 1700px) {
 
-.footer_icone {
-    width: 5em;
-}
+    /******                              NAVBAR                           ******/
 
-.footer_socials path {
-    fill: #969696;
-}
-
-/* list des termes et conditions */
-.footer_nav {
-    padding: 2em;
-}
-
-.footer_nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer_nav li {
-    list-style: none;
-    padding: 0 1.7em;
-}
-
-.footer_nav li a {
-    text-decoration: none;
-    color: #969696;
-    font-size: 1.3em;
-}
-
-/* crédits */
-
-small {
-    text-decoration: none;
-    color: #969696;
-    font-size: 1.3em;
-}
-}
-
-/*****************************************************************  Media Queries Ecran moyen (navbar) ********************************************************************/
-
-@media only screen and (min-width:1026px) and (max-width: 1450px) {
-    
     .navbar .logo {
-        width: 10%;
+        width: 20%;
         padding: 1em;
     }
 
     .navbar .logo a {
-        color: #fff;
         font-size: 2em;
-        font-weight: 700;
-        text-decoration: none;
-    }  
+    }
+
+    .navbar #principale {
+        width: 70%;
+    }
+
+    .navbar #principale ul {
+        gap: 0.2;
+    }
 
     .navbar #principale li {
         width: 20%;
-        list-style: none;
     }
 
-    .nav_social {
-        width: 15%;
-        display: flex;
-        justify-content: space-evenly;
+    .navbar #principale li a {
+        font-size: 1.5em;
     }
+
+    /* icones réseaux sociaux */
 
     .nav_social a {
-        width: 1.5em;
-}
+        width: 2.5em;
+    }
+
+    /******                                ABOUT                                ******/
+
+    .about {
+        padding: 2em;
+    }
+
+    .about article {
+        padding: 2em;
+    }
+
+    /************************************************************************* Main ***********************************************************************************/
+
+    /******                                Section : Features                                ******/
+
+    .features_cards {
+        padding: 1em;
+        gap: 1em;
+    }
+
+    .feature_card {
+        padding: 2.5em;
+        border-radius: 0.5em;
+    }
+
+    .feature_card h3 {
+        padding: 0.1em;
+        font-size: 1.5em;
+    }
+
+    .feature_card p {
+        font-size: 1.1em;
+    }
+
+    /******                                Section : Team                                ******/
+
+    .team h2 {
+        width: 80%;
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+
+    .team p {
+        width: 60%;
+    }
+
+    .profil figure:hover .profil_socials {
+        top: 2.5em;
+        left: 0.4em;
+    }
+
+    /******                                Section : Blog                                ******/
+
+    .blog {
+        padding: 3em 0.5em;
+    }
+
+    .blog h2 {
+        width: 60%;
+    }
+
+    .container_blog {
+        padding: 1em;
+    }
+
+    /******                                Section : Pricing                                ******/
+
+    .pricing {
+        padding: 1em 2em 5em 2em;
+    }
+
+    /* Partie article et image */
+    .container_who {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .container_who .article {
+        width: 50%;
+    }
+
+    .container_who article {
+        width: 100%;
+    }
+
+    .container_who article h2 {
+        width: 100%;
+        padding: 0.5em 0.5em 0.5em 0;
+        font-size: 2em;
+    }
+
+    .container_who article p {
+        width: 100%;
+        padding: 0 0.5em 1em 0;
+        font-size: 1em;
+    }
+
+    .who_info {
+        width: 100%;
+    }
+
+    .container_who .illustration {
+        width: 50%;
+        padding: 0;
+    }
+
+    .illustration img {
+        width: 100%;
+    }
+
+    /* Partie tableau du pricing */
+    .container_pricing {
+        width: 100%;
+    }
+
+    .pricing_cards {
+        width: 100%;
+        gap: 1em;
+    }
+
+    .pricing_card {
+        width: 33%;
+        padding: 0.2em;
+    }
+
 }
