@@ -605,7 +605,7 @@ header {
 
 /* Partie tableau du pricing */
 .container_pricing {
-    width: 80%;
+    width: 100%;
     padding: 1em;
 }
 
@@ -617,7 +617,7 @@ header {
 }
 
 .container_pricing p {
-    width: 60%;
+    width: 100%;
     padding-bottom: 0.5em;
     margin: auto;
     color: #333333;
@@ -634,7 +634,7 @@ header {
 
 .pricing_card {
     background-color: #fff;
-    width: 25%;
+    width: 33%;
     padding: 1em;
     border: 0.2em solid #fff;
     border-radius: 0.6em;
@@ -664,7 +664,8 @@ header {
     width: 33%;
     padding: 3em 0;
     display: flex;
-    gap: 2em;
+    justify-content: space-between;
+    gap: 7em;
 }
 
 .option_icone {
@@ -1867,6 +1868,10 @@ small {
     .pricing_card {
         width: 33%;
         padding: 0.2em;
+    }
+
+    .container_option {
+        gap: 2em;
     }
 
 }
